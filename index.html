@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="Мира — помощник по вопросам недвижимости. Разберитесь с покупкой, ипотекой, продажей, обменом или строительством дома.">
+  <title>Мира — ваш помощник по недвижимости</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Мира — на главную"><span class="brand-orb"><span></span></span><span><strong>мира</strong><small>помощник по недвижимости</small></span></a>
+    <a class="top-link" href="#how">Как это работает <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="eyebrow"><span class="status-dot"></span> ВАШ ЛИЧНЫЙ ПОМОЩНИК ПО НЕДВИЖИМОСТИ</div>
+      <h1>С недвижимостью<br>можно <em>разобраться.</em></h1>
+      <p class="hero-sub">Покупка, ипотека, обмен или свой дом — расскажите Мире, что у вас за ситуация. Она поможет разложить всё по полочкам и подготовить следующий шаг.</p>
+
+      <div class="experience" aria-label="Чат с Мирой и примеры вопросов">
+        <div class="orbit orbit-back" aria-hidden="true"><span></span></div>
+        <button class="question-float q1" data-prompt="Я снимаю квартиру и хочу купить своё жильё. С чего начать?">Хочу своё жильё</button>
+        <button class="question-float q2" data-prompt="У меня нет большого первоначального взноса. Какие варианты стоит рассмотреть?">Нет первого взноса</button>
+        <button class="question-float q3" data-prompt="Хочу продать дом и купить квартиру. Как лучше организовать сделку?">Продать дом и купить квартиру</button>
+        <button class="question-float q4" data-prompt="Хочу построить дом, но ещё не выбрал участок. С чего начать?">Дом и участок</button>
+        <button class="question-float q5" data-prompt="Хочу купить квартиру для сдачи в аренду. Как оценить доходность?">Недвижимость для дохода</button>
+        <button class="question-float q6" data-prompt="Пока не знаю, какой вариант мне подходит. Помоги разобраться в моей ситуации.">Пока не знаю, с чего начать</button>
+
+        <section class="chat-card" aria-label="Диалог с Мирой">
+          <div class="chat-head">
+            <div class="mira-avatar"><span class="avatar-star">✳</span></div>
+            <div class="chat-person"><strong>Мира</strong><span><i class="status-dot"></i> Помогу разобраться</span></div>
+            <span class="ai-label">AI ASSISTANT</span>
+          </div>
+          <div class="chat-messages" id="chatMessages" aria-live="polite">
+            <div class="message assistant-message"><span class="message-avatar">✳</span><div class="bubble"><p>Здравствуйте! Я Мира.</p><p>Расскажите, что вы хотите сделать с недвижимостью или что вас сейчас беспокоит. Я задам несколько вопросов, чтобы лучше понять ситуацию и помочь определить дальнейшие шаги.</p></div></div>
+          </div>
+          <div class="quick-prompts" id="quickPrompts">
+            <button data-prompt="Я снимаю квартиру и хочу купить своё жильё. С чего начать?">Купить первое жильё</button>
+            <button data-prompt="Хочу продать свою недвижимость и купить другую. Как это сделать?">Продать или обменять</button>
+            <button data-prompt="Хочу понять, что мне доступно по ипотеке и первоначальному взносу.">Разобраться с ипотекой</button>
+          </div>
+          <form class="chat-form" id="chatForm">
+            <label class="sr-only" for="messageInput">Ваш вопрос Мире</label>
+            <textarea id="messageInput" rows="1" maxlength="2500" placeholder="Напишите свой вопрос…" required></textarea>
+            <button class="send-button" type="submit" aria-label="Отправить сообщение"><span>↑</span></button>
+          </form>
+          <div class="chat-foot"><span><span class="tiny-lock">⌑</span> Можно начать с любого вопроса</span><span id="chatStatus">Мира на связи</span></div>
+        </section>
+        <div class="orbit-core" aria-hidden="true"><span class="core-glow"></span><span class="core-star">✳</span></div>
+      </div>
+      <div class="hero-note"><span class="note-line"></span> Без сложных терминов. Без давления. В удобном для вас темпе.</div>
+    </section>
+
+    <section class="topics section-wrap" id="topics">
+      <div class="section-heading"><div><div class="eyebrow">С ЧЕМ МОЖНО ОБРАТИТЬСЯ</div><h2>Любой вопрос —<br><em>хорошая точка старта.</em></h2></div><p>Не обязательно знать точный план. Начните с того, что уже знаете о своей ситуации.</p></div>
+      <div class="topic-grid">
+        <button class="topic-card" data-prompt="Я хочу купить своё первое жильё, но не знаю, с чего начать. Помоги разобраться."><span class="topic-icon">⌂</span><span><strong>Первое жильё</strong><small>С чего начать покупку и что подготовить</small></span><b>↗</b></button>
+        <button class="topic-card" data-prompt="Хочу разобраться с ипотекой и первоначальным взносом. Какие данные нужно оценить в первую очередь?"><span class="topic-icon">％</span><span><strong>Ипотека и взнос</strong><small>Возможности, бюджет и ежемесячный платёж</small></span><b>↗</b></button>
+        <button class="topic-card" data-prompt="Помоги сравнить новостройку и вторичное жильё с учётом моей ситуации."><span class="topic-icon">▦</span><span><strong>Новостройка или вторичка</strong><small>Сравнить варианты и критерии выбора</small></span><b>↗</b></button>
+        <button class="topic-card" data-prompt="Я хочу продать или обменять недвижимость. Какие обстоятельства важно учесть?"><span class="topic-icon">⇄</span><span><strong>Продажа и обмен</strong><small>Продать, обменять или купить с доплатой</small></span><b>↗</b></button>
+        <button class="topic-card" data-prompt="Я хочу продать дом и купить квартиру. Помоги составить последовательность действий."><span class="topic-icon">⌂</span><span><strong>Дом → квартира</strong><small>Продажа и покупка без лишней путаницы</small></span><b>↗</b></button>
+        <button class="topic-card" data-prompt="Я хочу построить дом и подобрать участок. С чего разумнее начать и что проверить?"><span class="topic-icon">⌁</span><span><strong>Дом и участок</strong><small>Строительство, земля и бюджет</small></span><b>↗</b></button>
+        <button class="topic-card" data-prompt="Рассматриваю недвижимость как инвестицию. Как оценить риски и потенциальную доходность?"><span class="topic-icon">↗</span><span><strong>Инвестиции и аренда</strong><small>Доходность, расходы и риски</small></span><b>↗</b></button>
+        <button class="topic-card" data-prompt="Меня интересует коммерческая недвижимость. Помоги сформулировать задачу и критерии выбора."><span class="topic-icon">▤</span><span><strong>Коммерческая недвижимость</strong><small>Помещение для бизнеса или вложений</small></span><b>↗</b></button>
+        <button class="topic-card" data-prompt="Планирую переехать в другой город или регион и хочу понять, как организовать вопрос с жильём."><span class="topic-icon">⌖</span><span><strong>Переезд</strong><small>Покупка, аренда или продажа при переезде</small></span><b>↗</b></button>
+        <button class="topic-card" data-prompt="У меня есть юридический вопрос по недвижимости или документам. Помоги понять, что нужно уточнить."><span class="topic-icon">§</span><span><strong>Документы и право</strong><small>Разобраться, какие документы проверить</small></span><b>↗</b></button>
+        <button class="topic-card topic-card-special" data-prompt="Я пока не знаю, какой вариант мне подходит. Задай вопросы и помоги разобраться с моей ситуацией."><span class="topic-icon">✳</span><span><strong>Пока не знаю</strong><small>Начнём с вашей ситуации — без готового плана</small></span><b>↗</b></button>
+      </div>
+    </section>
+
+    <section class="how section-wrap" id="how">
+      <div class="eyebrow">ПРОСТО И ПОНЯТНО</div><h2>От вопроса —<br><em>к понятному следующему шагу.</em></h2>
+      <div class="steps-grid">
+        <article class="step"><span class="step-number">01</span><h3>Расскажите</h3><p>Опишите ситуацию своими словами. Можно начать даже с одного предложения.</p></article>
+        <article class="step"><span class="step-number">02</span><h3>Уточним детали</h3><p>Мира задаст уместные вопросы, чтобы понять цель, сроки, бюджет и важные ограничения.</p></article>
+        <article class="step"><span class="step-number">03</span><h3>Подготовим обращение</h3><p>Если захотите, Мира соберёт краткое резюме и передаст его специалисту вместе с вашими контактами после согласия.</p></article>
+      </div>
+      <div class="privacy-note"><span class="privacy-symbol">◇</span><p><strong>Решение остаётся за вами.</strong> Контактные данные запрашиваются только при оформлении обращения. Перед отправкой вы сможете проверить согласие на обработку персональных данных.</p></div>
+    </section>
+
+    <section class="bottom-cta"><div class="cta-orb">✳</div><div><div class="eyebrow">МОЖНО НАЧАТЬ ПРЯМО СЕЙЧАС</div><h2>Какой вопрос по недвижимости<br>хотите решить вы?</h2><p>Напишите Мире — начнём с вашей ситуации.</p></div><button id="startChat" class="cta-button">Задать вопрос <span>↑</span></button></section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="#top"><span class="brand-orb"><span></span></span><span><strong>мира</strong><small>помощник по недвижимости</small></span></a><div class="footer-copy">Информационная помощь по вопросам недвижимости. Ответы ИИ могут требовать проверки специалистом.</div><a href="privacy.html">Политика конфиденциальности</a><span>© <span id="year"></span> Мира</span></footer>
+
+  <dialog id="leadDialog" class="lead-dialog">
+    <form id="leadForm" class="lead-form">
+      <button type="button" class="dialog-close" id="closeLead" aria-label="Закрыть">×</button>
+      <div class="eyebrow">ПЕРЕДАТЬ ВОПРОС СПЕЦИАЛИСТУ</div><h2>Как с вами связаться?</h2><p class="lead-intro">Мира подготовит резюме разговора. Проверьте контактные данные — и отправим обращение специалисту.</p>
+      <label for="leadName">Ваше имя</label><input id="leadName" name="name" autocomplete="name" maxlength="100" required placeholder="Как к вам обращаться">
+      <label for="leadPhone">Телефон</label><input id="leadPhone" name="phone" type="tel" autocomplete="tel" maxlength="30" required placeholder="+7…">
+      <label for="leadCity">Город (необязательно)</label><input id="leadCity" name="city" maxlength="100" placeholder="Например, Пермь">
+      <label for="leadTime">Когда удобнее связаться? (необязательно)</label><select id="leadTime" name="contact_time"><option value="Не указано">Не важно</option><option>Утром</option><option>Днём</option><option>Вечером</option><option>Написать в Telegram</option></select>
+      <label class="consent"><input type="checkbox" id="consent" required><span>Я согласен(на) на обработку персональных данных и передачу моего обращения специалисту через Telegram для ответа на мой запрос; с <a href="privacy.html" target="_blank" rel="noopener">политикой конфиденциальности</a>.</span></label>
+      <p class="form-error" id="leadError" role="alert"></p><button class="submit-lead" type="submit">Отправить обращение <span>→</span></button><p class="form-disclaimer">Данные будут отправлены только после нажатия кнопки и при настроенном подключении.</p>
+    </form>
+  </dialog>
+  <script src="app.js" defer></script>
+</body>
+</html>
